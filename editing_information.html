@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Редактирование проекта</title>
+  <link rel="stylesheet" href="css/editing_information_styles.css">
+</head>
+
+<body>
+  <h1>Редактирование проекта</h1>
+  <form action="/save" name="main" method="post" enctype="multipart/form-data">
+    <label for="project_title">Название:</label>
+    <input type="text" id="project_title" name="project_title" required>
+
+    <label for="project_description">Описание:</label>
+    <textarea id="project_description" name="project_description" required></textarea>
+
+    <label id="placeForImage" for="project_photo">Фотография:</label>
+
+    <div class="input-file-row">
+      <label class="input-file">
+           <input type="file" id="file" name="file[]" multiple>		
+           <span>Выберите файл</span>
+       </label>
+      <div class="input-file-list"></div>  
+    </div> 
+
+    <div class="buttons">
+      <button id="saveButton" class="save" type="button">Сохранить</button>
+      <a href="index.html" class="back">Вернутся</a>
+    </div>
+  </form>
+
+  
+  
+  <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/edit.js"></script>
+
+</body>
+</html>

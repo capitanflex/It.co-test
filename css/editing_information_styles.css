@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f6f6f6;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px 0;
+  color: #333;
+}
+
+form {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"], textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input-file-row {
+	display: inline-block;
+}
+.input-file {
+	position: relative;
+	display: inline-block;
+}
+.input-file span {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+	font-size: 14px;
+	vertical-align: middle;
+	color: rgb(255 255 255);
+	text-align: center;
+	border-radius: 4px;
+	background-color: #29abe2;
+	line-height: 22px;
+	height: 40px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	border: none;
+	margin: 0;
+	transition: background-color 0.2s;
+}
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+ 
+/* Focus */
+.input-file input[type=file]:focus + span {
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+ 
+/* Hover/Active */
+.input-file:hover span {
+	background-color: #1c88bf;
+}
+.input-file:active span {
+	background-color: #1c88bf;
+}
+ 
+/* Disabled */
+.input-file input[type=file]:disabled + span {
+	background-color: #eee;
+}
+ 
+/* Список файлов */
+.input-file-list {
+	padding: 10px 0;
+}
+.input-file-list-item {
+	margin-bottom: 10px;
+}
+.input-file-list-remove {
+	color: red;
+	text-decoration: none;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.buttons{
+  margin: 10px 0;
+}
+
+.save, .back {
+  background: #29abe2;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  
+  text-align: center;
+}
+
+img{
+  max-width: 95%;
+  padding: 35px 0;
+}
+
+.back {
+  text-decoration: none;
+  margin-left: 10px;
+}
+.save:hover {
+	background: #1c88bf;
+  }
+
+.back:hover {
+  background: #1c88bf;
+}

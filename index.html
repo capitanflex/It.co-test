@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Административная панель</title>
+    <link rel="stylesheet" href="css/table_styles.css">
+</head>
+<body>
+    <h1>Список проектов</h1>
+    <div class="container">
+        <div class="tableAndButtons">
+            <div class="tableName">
+                Проекты    
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Название проекта</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="editing_information.html?source=FoodDeliver">FoodDeliver</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="editing_information.html?source=Принт на ткани">Принт на ткани</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a href="editing_information.html?source=Новый проект">Новый проект</a></td>
+                    </tr>
+                    
+                </tbody>
+            </table>   
+        
+            <div class="buttons">
+                <button onclick="AddNewProject()" class="create">Создать</button>
+                <button onclick="CheckSelect();" name="deleteButton" class="delete">Удалить</button>
+            </div>
+
+            
+        </div>
+    </div> 
+    <dialog id="closeMe" class="dialog">
+        <p class="dialogText">Подтвердите удаление</p>
+        <div class="dialogButtons">
+            <button onclick="DeleteProjects()" class="submitButton">Подтвердить</button>
+            <button type="button" onclick="window.closeMe.close();" class="cancelButton">Отмена</button>
+        </div>
+        <form method="dialog"></form>
+      </dialog>
+    <script src="js/table.js"></script>
+</body>
+</html>

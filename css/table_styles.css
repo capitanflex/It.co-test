@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+   
+   
+}
+
+.tableAndButtons {
+    border: 3px solid #0088f8a2;
+    border-radius: 15px ;
+}
+
+table {
+    width: 100%;
+}
+
+.tableName{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: #0088f8a2;
+    border-radius:  11px 11px 0 0;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd63;
+}
+
+th {
+    font-size: 15px;
+    font-weight: normal;
+    color: #a2a2a2;
+}
+
+td{
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.buttons {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.create, .delete {
+    font-size: 16px;
+    width: 150px;
+    border: none;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #3fb9d842;
+    border-radius:  10px;
+    color: #221c1c;
+    text-decoration: none;
+    text-align: center;
+}
+
+.create:hover, .delete:hover {
+    background-color: #2f809442;
+}
+
+.dialog {
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 0 30px 30px rgba(0,0,0,0.08);
+    background: #ffffff;
+    padding: 20px;
+    border: none;
+  }
+
+.dialog::backdrop{
+    background-color: rgba(0,0,0,0.3);
+}
+  
+.dialog p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+    color: #333333;
+}
+.dialogButtons {
+    display: flex;
+    justify-content: center;
+}
+
+.dialog button {
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    width: 130px;
+}
+  
+.dialog .submitButton {
+    background-color: #417daf; /* Green */
+    color: white;
+}
+
+.dialog .submitButton:hover {
+    background-color: #35658b;
+}
+  
+  .dialog .cancelButton {
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .dialog .cancelButton:hover {
+    background-color: #da190b;
+  }
