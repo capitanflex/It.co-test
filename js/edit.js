@@ -74,13 +74,3 @@ function removeFilesItem(target){
 
 var saveButton = document.querySelector('#saveButton');
 
-saveButton.addEventListener('click', save);
-
-function save() {
-	localStorage.setItem('savedHTML', document.body.outerHTML);
-}
-
-// window.addEventListener('load', function() {
-// 	var savedHTML = localStorage.getItem('savedHTML');
-// 	document.body.outerHTML = savedHTML;
-// 	});
