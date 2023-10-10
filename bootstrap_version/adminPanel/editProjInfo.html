@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/editStyle.css">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Редактирование проекта</h1>
+        <form action="/save" name="main" method="post" enctype="multipart/form-data">
+    
+            <div class="input-group">
+                <span class="input-group-text" >Название</span>
+                <input type="text" id="project_title" class="form-control" aria-describedby="basic-addon1">
+            </div>
+            
+            <div class="input-group">
+                <span class="input-group-text">Описание</span>
+                <textarea class="form-control" id="project_description"aria-label="With textarea"></textarea>
+            </div>
+
+            <div class="input-group project-image" for="project_photo">
+                <span id="placeForImage">Фотография:</span>
+                
+            </div>
+
+            <div class="input-group mb-3">
+                <label  class="input-group-text" for="file">Фотография</label>
+                <input id="file" type="file" class="form-control">
+            </div>
+
+            <div class="table-buttons d-flex gap-3 justify-content-left">
+                <button class="btn btn-primary" type="button">Сохранить</button>
+                <a href="index.html" class="back"><button class="btn btn-primary" type="button">Вернутся</button></a>
+            </div>
+        </form>
+    </div>
+    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/editPage.js"></script>
+</body>
+</html>

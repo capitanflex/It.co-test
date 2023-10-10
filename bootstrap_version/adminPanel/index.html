@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/tableStyle.css">
+    <title>Admin Panel</title>
+</head>
+
+<body>
+  <header>
+      <nav class="navbar bg-body-tertiary">
+          <div class="container">
+            <a class="navbar-brand " href="https://it-co.ru/">
+              <img src="https://it-co.ru/img/logo-color.svg" alt="Logo" width="60" height="35" class="d-inline-block ">
+              <span class="align-middle">Projects</span>
+            </a>
+          </div>
+        </nav>
+  </header>
+
+  <div class="container">
+    <div class="table-container">
+      <div class="table-name">Проекты</div>
+      <table class="table">
+          <thead>  
+            <tr>
+              <th ></th>
+              <th>Название проекта</th>
+            </tr>
+          </thead>
+        
+        <tbody>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td><a href="editProjInfo.html?source=FoodDeliver">FoodDeliver</a></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td><a href="editProjInfo.html?source=Принт на ткани">Принт на ткани</a></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td colspan="2"><a href="editProjInfo.html?source=Новый проект">Новый проект</a></td>
+            
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="table-buttons d-flex gap-5 justify-content-center">
+        <button onclick="AddNewProject()" class="btn btn-primary" type="button">Создать</button>
+        <button onclick="CheckSelect()" class="btn btn-primary" type="button">Удалить</button>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="closeMe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Подтвердите удаление</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+          <button onclick="DeleteProjects()" type="button" data-bs-dismiss="modal" class="btn btn-primary">Подтвердить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="js/mainPage.js"></script>
+  </body>
+</html>
